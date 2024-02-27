@@ -1,0 +1,90 @@
+.body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: -50px; 
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+    border-radius: 8px;
+}
+
+.company-logo {
+    max-width: 300px;
+    max-height: 300px; 
+    margin: 10px auto;
+    display: block;
+
+}
+
+.heading {
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; 
+    font-family: 'Noto Sans JP', sans-serif; 
+    color: #333; 
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    color: #555;
+}
+
+
+.input {
+    width: calc(100% - 0px);
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Added transition for smooth effect */
+}
+input:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Glowing effect on hover */
+}
+
+.login-btn {
+    width: 30%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans JP', sans-serif; 
+    background-color: #000; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: auto;
+    display: block;
+}
+
+.login-btn:hover {
+    background-color: #333; 
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+    .auth-container {
+        max-width: 100%;
+    }
+}
